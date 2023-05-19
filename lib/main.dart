@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Welcome Back",
+                "SIGN IN",
                 style: textTextStyle.copyWith(fontSize: 30, fontWeight: bold),
               ),
               SizedBox(
@@ -138,6 +138,44 @@ class LoginPage extends StatelessWidget {
                     style: whiteTextStyle.copyWith(fontWeight: bold),
                   ),
                 ),
+              ),
+              Container(
+                width: double.infinity,
+                height: 50,
+                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 19),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: buttonColor,
+                  ),
+                  onPressed: () {},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png",
+                        height: 20,
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Text(
+                        "SIGN IN WITH GOOGLE",
+                        style: textTextStyle.copyWith(fontWeight: bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("You don't have an account yet?",
+                      style: secondaryTextStyle.copyWith(fontSize: 12)),
+                  Text(
+                    "Sign Up",
+                    style: tncTextStyle.copyWith(fontSize: 12),
+                  ),
+                ],
               ),
             ],
           ),
